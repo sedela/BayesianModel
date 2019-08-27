@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Understand_and_describe_Goals_Plan">
+			<state id="NotLearned" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<probabilities>0.07433712121212122 0.3669507575757576 0.5587121212121213</probabilities>
+		</cpt>
+		<cpt id="React_to_different_situations_Adaptability">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<probabilities>0.2689393939393939 0.5089962121212122 0.2220643939393939</probabilities>
+		</cpt>
+		<cpt id="Responsability_toward_Learning_Goals_Engagement">
+			<state id="NotLearned" />
+			<state id="InProgress" />
+			<state id="Learned" />
+			<parents>Understand_and_describe_Goals_Plan</parents>
+			<probabilities>0.3725191268266741 0.3191167806843049 0.3083640924890209 0.3068497939198153 0.4546748569214188 0.2384753491587659 0.1839669582118562 0.4586083576287657 0.357424684159378</probabilities>
+		</cpt>
+		<cpt id="Identify_and_Descibe_tasks">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<parents>Responsability_toward_Learning_Goals_Engagement React_to_different_situations_Adaptability</parents>
+			<probabilities>0.3533333333333333 0.3233333333333334 0.3233333333333334 0.315306993244885 0.3528728191670312 0.3318201875880837 0.3145333333333334 0.3145333333333334 0.3709333333333333 0.3111126640267101 0.3865843621399176 0.3023029738333722 0.3513271379980564 0.3333333333333333 0.3153395286686103 0.2921614387616523 0.421448254947721 0.2863903062906267 0.3569659952350011 0.3267801602772363 0.3162538444877626 0.3617622515551509 0.3251213776361705 0.3131163708086785 0.3193171232174002 0.3391435313429774 0.3415393454396224</probabilities>
+		</cpt>
+		<cpt id="ResourceManagement">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<parents>Identify_and_Descibe_tasks</parents>
+			<probabilities>0.3812352926688922 0.3571012759974115 0.261663431333696 0.310219942257413 0.4136748324101954 0.2761052253323916 0.2335013254698717 0.3653814076787895 0.4011172668513388</probabilities>
+		</cpt>
+		<cpt id="Execute">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<parents>ResourceManagement</parents>
+			<probabilities>0.4352750809061487 0.384304207119741 0.1804207119741101 0.3454301075268816 0.480510752688172 0.1740591397849463 0.3506666666666666 0.4846666666666666 0.1646666666666667</probabilities>
+		</cpt>
+		<cpt id="Manage_the_obstacles_Challenges">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<parents>Execute</parents>
+			<probabilities>0.2323823430420712 0.409059003236246 0.3585586537216828 0.1854832136752136 0.5264940854700855 0.2880227008547008 0.2466170035842294 0.3777750250896058 0.3756079713261649</probabilities>
+		</cpt>
+		<cpt id="MonitorEvaluateProgress">
+			<state id="NotLearned_" />
+			<state id="InProgress" />
+			<state id="Learned_" />
+			<parents>Manage_the_obstacles_Challenges</parents>
+			<probabilities>0.309159298245614 0.4517277192982456 0.2391129824561403 0.2943940139708981 0.5430468463622052 0.1625591396668966 0.1873876884235539 0.6543446944382565 0.1582676171381897</probabilities>
+		</cpt>
+		<cpt id="Level_of_SelfRegulation">
+			<state id="Bad" />
+			<state id="Intermediate" />
+			<state id="Good" />
+			<parents>MonitorEvaluateProgress Responsability_toward_Learning_Goals_Engagement</parents>
+			<probabilities>0.1204081632653061 0.4999999999999999 0.3795918367346939 0.2538461538461538 0.4442307692307693 0.3019230769230769 0 0.5897959183673469 0.410204081632653 0.111340206185567 0.4948453608247423 0.3938144329896908 0.07652173913043479 0.4956521739130435 0.4278260869565217 0.08888888888888891 0.5535353535353535 0.3575757575757576 0.1 0.6 0.3 0.09887640449438202 0.5932584269662921 0.3078651685393258 0.09565217391304348 0.5739130434782608 0.3304347826086956</probabilities>
+			<property id="Author">Selsébil BEN EL HAJ SGHAIER</property>
+			<property id="Tutor">Jean-Marie GILLIOT</property>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.4.4217.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="Understand_and_describe_Goals_Plan">
+				<name>Understand and describe Goals ( Plan )</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>243 251 436 296</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Responsability_toward_Learning_Goals_Engagement">
+				<name> Engage in Learning Goals /Responsability</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>283 332 483 395</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Level_of_SelfRegulation">
+				<name>Level of Self-regulation</name>
+				<interior color="ffcc99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>393 479 544 536</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Identify_and_Descibe_tasks">
+				<name>Identify and Descibe tasks</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>145 473 335 528</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="ResourceManagement">
+				<name>Manage The Resources</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>299 595 464 657</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="React_to_different_situations_Adaptability">
+				<name>React to different situations / Adaptability</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>139 382 279 439</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="MonitorEvaluateProgress">
+				<name>Evaluate and Monitor the progress</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>523 348 663 400</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Manage_the_obstacles_Challenges">
+				<name>Manage the obstacles/Challenges</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>568 454 751 514</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Execute">
+				<name>Execute Tasks (How To Do)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>578 563 748 622</position>
+				<barchart width="128" height="72" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
